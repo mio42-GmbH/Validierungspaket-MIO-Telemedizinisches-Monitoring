@@ -1,0 +1,2219 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="8d304c64-5840-48b3-8174-e49997ded114"/>
+  <meta>
+      <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Bundle|1.0.0"/>
+  </meta>
+  <identifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:uuid:8d304c64-5840-48b3-8174-e49997ded114"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2022-06-03T10:21:16+02:00"/>
+  <entry>
+      <fullUrl value="urn:uuid:c6052f9e-296c-4f4c-ab1d-81873c0a8e81"/>
+      <resource>
+          <Composition>
+              <id value="c6052f9e-296c-4f4c-ab1d-81873c0a8e81"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Composition|1.0.0"/>
+              </meta>
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_TELE_Information_Recipient|1.0.0">
+                  <valueReference>
+                      <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+                  </valueReference>
+              </extension>
+              <status value="final"/>
+              <type>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="75496-0"/>
+                      <display value="Telehealth Note"/>
+                  </coding>
+              </type>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <date value="2022-02-02"/>
+              <author>
+                  <reference value="urn:uuid:2716682a-9c89-43ba-b01b-88a03a8cef9b"/>
+              </author>
+              <title value="Telemedizinisches Monitoring"/>
+              <section>
+                  <title value="Versorgungsteam"/>
+                  <code>
+                      <coding>
+                          <system value="http://loinc.org"/>
+                          <version value="2.71"/>
+                          <code value="85847-2"/>
+                          <display value="Patient Care team information"/>
+                      </coding>
+                  </code>
+                  <entry>
+                      <reference value="urn:uuid:28b402f7-c846-41bb-a466-79e5ddb54812"/>
+                  </entry>
+              </section>
+              <section>
+                  <title value="Termine"/>
+                  <code>
+                      <coding>
+                          <system value="http://loinc.org"/>
+                          <version value="2.71"/>
+                          <code value="56446-8"/>
+                          <display value="Appointment summary Document"/>
+                      </coding>
+                  </code>
+                  <entry>
+                      <reference value="urn:uuid:ac8068d9-565b-4f60-8b05-00e1af23a1b9"/>
+                  </entry>
+              </section>
+              <section>
+                  <title value="Anamnese"/>
+                  <code>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="1003642006"/>
+                          <display value="Past medical history section (record artifact)"/>
+                      </coding>
+                  </code>
+                  <entry>
+                      <reference value="urn:uuid:8d0b4678-5831-4f1d-a8c6-221594232845"/>
+                  </entry>
+                  <entry>
+                      <reference value="urn:uuid:5898df32-7a2a-4705-a858-ac1a2b902f4e"/>
+                  </entry>
+                  <entry>
+                      <reference value="urn:uuid:206abe47-817f-456a-a7da-0e819d8070bb"/>
+                  </entry>
+                  <entry>
+                      <reference value="urn:uuid:c64ee89f-1276-4679-9ae0-b5ec117623c6"/>
+                  </entry>
+              </section>
+              <section>
+                  <title value="Geräte/Implantate"/>
+                  <code>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="1184586001"/>
+                          <display value="Medical device document section (record artifact)"/>
+                      </coding>
+                  </code>
+                  <section>
+                      <title value="Aktuelle Geräte/Implantate"/>
+                      <code>
+                          <coding>
+                              <system value="http://snomed.info/sct"/>
+                              <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                              <code value="15240007"/>
+                              <display value="Current (qualifier value)"/>
+                          </coding>
+                      </code>
+                      <entry>
+                          <reference value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+                      </entry>
+                  </section>
+              </section>
+              <section>
+                  <title value="Befunde"/>
+                  <code>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="371524004"/>
+                          <display value="Clinical report (record artifact)"/>
+                      </coding>
+                  </code>
+                  <section>
+                      <title value="Aktuelle Befunde"/>
+                      <code>
+                          <coding>
+                              <system value="http://snomed.info/sct"/>
+                              <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                              <code value="15240007"/>
+                              <display value="Current (qualifier value)"/>
+                          </coding>
+                      </code>
+                      <entry>
+                          <reference value="urn:uuid:3aff2b4a-a471-4281-a656-34cab1b82179"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:c25ca6f7-05a2-4ba4-9eb3-eb6f093917bc"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:96c1ff2b-5d52-48ed-a11d-8a0d8f848058"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:efc6a4eb-8dbf-4383-aceb-1e4e06fc9410"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:ab96307a-7f8e-405f-9f04-26d623116959"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:a5237752-e3a5-4113-ad59-6fb0be01fe75"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:c9eaa8ae-9179-4c06-b8c7-12b72f729ddf"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:1645a568-c55d-46e0-9929-c21c29f6c689"/>
+                      </entry>
+                  </section>
+              </section>
+              <section>
+                  <title value="Prozeduren"/>
+                  <code>
+                      <coding>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_TELE_SectionCodes"/>
+                          <version value="1.0.0"/>
+                          <code value="SectionProzeduren"/>
+                          <display value="Bereich Prozeduren"/>
+                      </coding>
+                  </code>
+                  <section>
+                      <title value="Vergangene Prozeduren"/>
+                      <code>
+                          <coding>
+                              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_TELE_SectionCodes"/>
+                              <version value="1.0.0"/>
+                              <code value="SectionVergangeneProzeduren"/>
+                              <display value="Bereich Vergangene Prozeduren"/>
+                          </coding>
+                      </code>
+                      <entry>
+                          <reference value="urn:uuid:8d925c9e-c919-49ed-a52e-096723c0e61a"/>
+                      </entry>
+                  </section>
+              </section>
+              <section>
+                  <title value="Medikation"/>
+                  <code>
+                      <coding>
+                          <system value="http://loinc.org"/>
+                          <version value="2.71"/>
+                          <code value="56445-0"/>
+                          <display value="Medication summary Document"/>
+                      </coding>
+                  </code>
+                  <section>
+                      <title value="Aktuelle Medikation"/>
+                      <code>
+                          <coding>
+                              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_TELE_SectionCodes"/>
+                              <version value="1.0.0"/>
+                              <code value="SectionAktuelleMedikation"/>
+                              <display value="Bereich Aktuelle Medikation"/>
+                          </coding>
+                      </code>
+                      <entry>
+                          <reference value="urn:uuid:c1f97fb7-262f-4adb-b6df-dc877d09c45b"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:89a69645-91c2-4877-b735-f287f1edfdee"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:e8f70d9b-cfb9-4fb3-9f1e-297f9a8b393c"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:3d5edec9-db42-405f-8c1b-ccee78d73190"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:f9d698bf-bab7-4b22-8043-1c057909fc94"/>
+                      </entry>
+                  </section>
+              </section>
+              <section>
+                  <title value="Diagnosen"/>
+                  <code>
+                      <coding>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_TELE_SectionCodes"/>
+                          <version value="1.0.0"/>
+                          <code value="SectionDiagnosen"/>
+                          <display value="Bereich Diagnosen"/>
+                      </coding>
+                  </code>
+                  <section>
+                      <title value="Aktuelle Diagnosen"/>
+                      <code>
+                          <coding>
+                              <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_TELE_SectionCodes"/>
+                              <version value="1.0.0"/>
+                              <code value="SectionAktuelleDiagnosen"/>
+                              <display value="Bereich Aktuelle Diagnosen"/>
+                          </coding>
+                      </code>
+                      <entry>
+                          <reference value="urn:uuid:63930439-683a-4153-ab7c-d15f0976742c"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:8d521f05-b201-4e54-bd0c-5e7cea8aa3f6"/>
+                      </entry>
+                      <entry>
+                          <reference value="urn:uuid:dfb2aa70-6411-4ea5-8b9f-cc5724f9cfea"/>
+                      </entry>
+                  </section>
+              </section>
+              <section>
+                  <title value="Verlauf"/>
+                  <code>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="371532007"/>
+                          <display value="Progress report (record artifact)"/>
+                      </coding>
+                  </code>
+                  <entry>
+                      <reference value="urn:uuid:1e44b94e-ffaa-46ad-8f3b-8514ab710e61"/>
+                  </entry>
+              </section>
+              <section>
+                  <title value="Weiteres Prozedere und Empfehlungen"/>
+                  <code>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="423134005"/>
+                          <display value="Plan section (record artifact)"/>
+                      </coding>
+                  </code>
+                  <entry>
+                      <reference value="urn:uuid:ac20f513-6c71-459e-885d-61409c030e8a"/>
+                  </entry>
+              </section>
+          </Composition>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:b6d7dd84-9049-477c-9841-a4a340baeeaf"/>
+      <resource>
+          <Device>
+              <id value="b6d7dd84-9049-477c-9841-a4a340baeeaf"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Device|1.0.0"/>
+              </meta>
+              <definition>
+                  <reference value="urn:uuid:34f4b14f-2b2a-4baa-b3b3-3420f8a4d5a2"/>
+              </definition>
+              <udiCarrier>
+                  <deviceIdentifier value="54321543214L"/>
+              </udiCarrier>
+              <status value="active">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Aktiv"/>
+                      </extension>
+                  </extension>
+              </status>
+              <serialNumber value="54321"/>
+              <deviceName>
+                  <name value="CardioMEMS PA Sensor"/>
+                  <type value="user-friendly-name">
+                      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                          <extension url="content">
+                              <valueString value="Benutzerfreundlicher Name"/>
+                          </extension>
+                      </extension>
+                  </type>
+              </deviceName>
+              <modelNumber value="54321"/>
+              <type>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="711337005"/>
+                      <display value="Implantable pulmonary artery pressure monitoring system (physical object)"/>
+                  </coding>
+              </type>
+              <patient>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </patient>
+          </Device>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:34f4b14f-2b2a-4baa-b3b3-3420f8a4d5a2"/>
+      <resource>
+          <DeviceDefinition>
+              <id value="34f4b14f-2b2a-4baa-b3b3-3420f8a4d5a2"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_DeviceDefinition|1.0.0"/>
+              </meta>
+              <manufacturerReference>
+                  <reference value="urn:uuid:aef1c719-c431-4caf-8b66-7bac49aecf28"/>
+              </manufacturerReference>
+              <deviceName>
+                  <name value="CardioMEMS PA Sensor"/>
+                  <type value="user-friendly-name">
+                      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                          <extension url="content">
+                              <valueString value="Benutzerfreundlicher Name"/>
+                          </extension>
+                      </extension>
+                  </type>
+              </deviceName>
+              <type>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="711337005"/>
+                      <display value="Implantable pulmonary artery pressure monitoring system (physical object)"/>
+                  </coding>
+              </type>
+          </DeviceDefinition>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:aef1c719-c431-4caf-8b66-7bac49aecf28"/>
+      <resource>
+          <Organization>
+              <id value="aef1c719-c431-4caf-8b66-7bac49aecf28"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Organization_Manufacturer|1.0.0"/>
+              </meta>
+              <name value="CardioMEMS PA Sensor - Hersteller"/>
+              <telecom>
+                  <system value="url">
+                      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                          <extension url="content">
+                              <valueString value="URL"/>
+                          </extension>
+                      </extension>
+                  </system>
+                  <value value="https://hersteller.de"/>
+              </telecom>
+              <address>
+                  <!--  Strassenanschrift  -->
+                  <type value="both"/>
+                  <line value="Potsdamer Platz 17, 10117 Berlin">
+                      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                          <valueString value="Potsdamer Platz"/>
+                      </extension>
+                      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                          <valueString value="17"/>
+                      </extension>
+                  </line>
+                  <city value="Berlin"/>
+                  <postalCode value="10117"/>
+                  <country value="D"/>
+              </address>
+          </Organization>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:dca58050-3179-11ec-8d3d-0242ac130003"/>
+      <resource>
+          <DeviceUseStatement>
+              <id value="dca58050-3179-11ec-8d3d-0242ac130003"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_DeviceUseStatement|1.0.0"/>
+              </meta>
+              <status value="active">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Aktiv"/>
+                      </extension>
+                  </extension>
+              </status>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <timingPeriod>
+                  <start value="2018-01-01"/>
+              </timingPeriod>
+              <recordedOn value="2022-02-14"/>
+              <device>
+                  <reference value="urn:uuid:b6d7dd84-9049-477c-9841-a4a340baeeaf"/>
+              </device>
+              <reasonCode>
+                  <coding>
+                      <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+                      <version value="2022"/>
+                      <code value="I50.13"/>
+                      <display value="Linksherzinsuffizienz: Mit Beschwerden bei leichterer Belastung"/>
+                  </coding>
+              </reasonCode>
+              <bodySite>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="50408007"/>
+                      <display value="Structure of left pulmonary artery (body structure)">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Linke Pulmonalarterie"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </bodySite>
+          </DeviceUseStatement>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:a5237752-e3a5-4113-ad59-6fb0be01fe75"/>
+      <resource>
+          <Observation>
+              <id value="a5237752-e3a5-4113-ad59-6fb0be01fe75"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Free|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                      <code value="laboratory"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <code value="33914-3"/>
+                      <display value="Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"/>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <effectiveDateTime value="2022-02-14"/>
+              <performer>
+                  <reference value="urn:uuid:2716682a-9c89-43ba-b01b-88a03a8cef9b"/>
+              </performer>
+              <valueQuantity>
+                  <value value="60"/>
+                  <comparator value="&gt;"/>
+                  <unit value="mL/min/1.73m2"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mL/min/{1.73_m2}"/>
+              </valueQuantity>
+              <method>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <code value="702668005"/>
+                      <display value="MDRD"/>
+                  </coding>
+              </method>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:c9eaa8ae-9179-4c06-b8c7-12b72f729ddf"/>
+      <resource>
+          <Observation>
+              <id value="c9eaa8ae-9179-4c06-b8c7-12b72f729ddf"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Free|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                      <code value="procedure"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="urn:oid:2.16.840.1.113883.6.24"/>
+                      <code value="131328"/>
+                      <display value="MDC_ECG_ELEC_POTL"/>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <effectiveDateTime value="2022-01-20"/>
+              <component>
+                  <code>
+                      <coding>
+                          <system value="urn:oid:2.16.840.1.113883.6.24"/>
+                          <code value="131329"/>
+                          <display value="MDC_ECG_ELEC_POTL_I"/>
+                      </coding>
+                  </code>
+                  <valueSampledData>
+                      <origin>
+                          <value value="2048"/>
+                          <unit value="millivolt"/>
+                          <system value="http://unitsofmeasure.org"/>
+                          <code value="mV"/>
+                      </origin>
+                      <period value="10"/>
+                      <dimensions value="1"/>
+                      <data value="2041 2043 2037 2047 2060 2062 2051 2023 2014 2027 2034 2033 2040 2047 2047 2053 2058 2064 2059 2063 2061 2052 2053 2038 1966 1885 1884 2009 2129 2166 2137 2102 2086 2077 2067 2067 2060 2059 2062 2062 2060 2057 2045 2047 2057 2054 2042 2029 2027 2018 2007 1995 2001 2012 2024 2039 2068 2092 2111 2125 2131 2148 2137 2138 2128 2128 2115 2099 2097 2096 2101 2101 2091 2073 2076 2077 2084 2081 2088 2092 2070 2069 2074 2077 2075 2068 2064 2060 2062 2074 2075 2074 2075 2063 2058 2058 2064 2064 2070 2074 2067 2060 2062 2063 2061 2059 2048 2052 2049 2048 2051 2059 2059 2066 2077 2073"/>
+                  </valueSampledData>
+              </component>
+              <component>
+                  <code>
+                      <coding>
+                          <system value="urn:oid:2.16.840.1.113883.6.24"/>
+                          <code value="131329"/>
+                          <display value="MDC_ECG_ELEC_POTL_II"/>
+                      </coding>
+                  </code>
+                  <valueSampledData>
+                      <origin>
+                          <value value="2048"/>
+                          <unit value="millivolt"/>
+                          <system value="http://unitsofmeasure.org"/>
+                          <code value="mV"/>
+                      </origin>
+                      <period value="10"/>
+                      <dimensions value="1"/>
+                      <data value="2041 2043 2037 2047 2060 2062 2051 2023 2014 2027 2034 2033 2040 2047 2047 2053 2058 2064 2059 2063 2061 2052 2053 2038 1966 1885 1884 2009 2129 2166 2137 2102 2086 2077 2067 2067 2060 2059 2062 2062 2060 2057 2045 2047 2057 2054 2042 2029 2027 2018 2007 1995 2001 2012 2024 2039 2068 2092 2111 2125 2131 2148 2137 2138 2128 2128 2115 2099 2097 2096 2101 2101 2091 2073 2076 2077 2084 2081 2088 2092 2070 2069 2074 2077 2075 2068 2064 2060 2062 2074 2075 2074 2075 2063 2058 2058 2064 2064 2070 2074 2067 2060 2062 2063 2061 2059 2048 2052 2049 2048 2051 2059 2059 2066 2077 2073"/>
+                  </valueSampledData>
+              </component>
+              <component>
+                  <code>
+                      <coding>
+                          <system value="urn:oid:2.16.840.1.113883.6.24"/>
+                          <code value="131329"/>
+                          <display value="MDC_ECG_ELEC_POTL_III"/>
+                      </coding>
+                  </code>
+                  <valueSampledData>
+                      <origin>
+                          <value value="2048"/>
+                          <unit value="millivolt"/>
+                          <system value="http://unitsofmeasure.org"/>
+                          <code value="mV"/>
+                      </origin>
+                      <period value="10"/>
+                      <dimensions value="1"/>
+                      <data value="2041 2043 2037 2047 2060 2062 2051 2023 2014 2027 2034 2033 2040 2047 2047 2053 2058 2064 2059 2063 2061 2052 2053 2038 1966 1885 1884 2009 2129 2166 2137 2102 2086 2077 2067 2067 2060 2059 2062 2062 2060 2057 2045 2047 2057 2054 2042 2029 2027 2018 2007 1995 2001 2012 2024 2039 2068 2092 2111 2125 2131 2148 2137 2138 2128 2128 2115 2099 2097 2096 2101 2101 2091 2073 2076 2077 2084 2081 2088 2092 2070 2069 2074 2077 2075 2068 2064 2060 2062 2074 2075 2074 2075 2063 2058 2058 2064 2064 2070 2074 2067 2060 2062 2063 2061 2059 2048 2052 2049 2048 2051 2059 2059 2066 2077 2073"/>
+                  </valueSampledData>
+              </component>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:ac8068d9-565b-4f60-8b05-00e1af23a1b9"/>
+      <resource>
+          <Appointment>
+              <id value="ac8068d9-565b-4f60-8b05-00e1af23a1b9"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Appointment|1.0.0"/>
+              </meta>
+              <status value="booked">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Gebucht"/>
+                      </extension>
+                  </extension>
+              </status>
+              <serviceCategory>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                      <version value="2018-08-12"/>
+                      <code value="VR"/>
+                      <display value="virtual">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Telefonische/telemedizinische Konsultation"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </serviceCategory>
+              <start value="2022-02-15T15:00:00Z"/>
+              <end value="2022-02-15T16:00:00Z"/>
+              <participant>
+                  <actor>
+                      <reference value="urn:uuid:f7ea0959-b985-409c-8c83-ab9344896cc2"/>
+                  </actor>
+                  <status value="accepted">
+                      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                          <extension url="content">
+                              <valueString value="bestätigt"/>
+                          </extension>
+                      </extension>
+                  </status>
+              </participant>
+              <participant>
+                  <actor>
+                      <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+                  </actor>
+                  <status value="accepted">
+                      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                          <extension url="content">
+                              <valueString value="bestätigt"/>
+                          </extension>
+                      </extension>
+                  </status>
+              </participant>
+          </Appointment>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:28b402f7-c846-41bb-a466-79e5ddb54812"/>
+      <resource>
+          <CareTeam>
+              <id value="28b402f7-c846-41bb-a466-79e5ddb54812"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_CareTeam|1.0.0"/>
+              </meta>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <participant>
+                  <role>
+                      <coding>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_TELE_Role_CareTeam"/>
+                          <version value="1.0.0"/>
+                          <code value="PBA"/>
+                          <display value="Primär behandelnde(-r) Arzt / Ärztin"/>
+                      </coding>
+                  </role>
+                  <member>
+                      <reference value="urn:uuid:f7ea0959-b985-409c-8c83-ab9344896cc2"/>
+                  </member>
+              </participant>
+              <participant>
+                  <role>
+                      <coding>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_TELE_Role_CareTeam"/>
+                          <version value="1.0.0"/>
+                          <code value="TMZ"/>
+                          <display value="Telemedizinisches Zentrum"/>
+                      </coding>
+                  </role>
+                  <member>
+                      <reference value="urn:uuid:d17bb26a-18d6-4940-9887-3f438ec1f1bb"/>
+                  </member>
+              </participant>
+          </CareTeam>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:63930439-683a-4153-ab7c-d15f0976742c"/>
+      <resource>
+          <Condition>
+              <id value="63930439-683a-4153-ab7c-d15f0976742c"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Condition_Diagnosis|1.0.0"/>
+              </meta>
+              <code>
+                  <coding>
+                      <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+                      <version value="2019"/>
+                      <code value="I50.13"/>
+                      <display value="Linksherzinsuffizienz mit Beschwerden bei leichterer Belastung"/>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+          </Condition>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:8d521f05-b201-4e54-bd0c-5e7cea8aa3f6"/>
+      <resource>
+          <Condition>
+              <id value="8d521f05-b201-4e54-bd0c-5e7cea8aa3f6"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Condition_Diagnosis|1.0.0"/>
+              </meta>
+              <code>
+                  <coding>
+                      <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+                      <version value="2019"/>
+                      <code value="I25.12"/>
+                      <display value="Koronare Herzkrankheit: Zwei-Gefäß-Erkrankung"/>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+          </Condition>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:dfb2aa70-6411-4ea5-8b9f-cc5724f9cfea"/>
+      <resource>
+          <Condition>
+              <id value="dfb2aa70-6411-4ea5-8b9f-cc5724f9cfea"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Condition_Diagnosis|1.0.0"/>
+              </meta>
+              <code>
+                  <coding>
+                      <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+                      <version value="2019"/>
+                      <code value="I10.90"/>
+                      <display value="Arterielle Hypertonie"/>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+          </Condition>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:efc6a4eb-8dbf-4383-aceb-1e4e06fc9410"/>
+      <resource>
+          <DiagnosticReport>
+              <id value="efc6a4eb-8dbf-4383-aceb-1e4e06fc9410"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_DiagnosticReport|1.0.0"/>
+              </meta>
+              <status value="appended">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Angefügt"/>
+                      </extension>
+                  </extension>
+              </status>
+              <code>
+                  <text value="EKG"/>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <effectiveDateTime value="2022-01-14"/>
+              <conclusion value="Durchgehender SR mit unauffälligem Frequenzspektrum und wenigen SVES und VES"/>
+          </DiagnosticReport>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:c1f97fb7-262f-4adb-b6df-dc877d09c45b"/>
+      <resource>
+          <MedicationStatement>
+              <id value="c1f97fb7-262f-4adb-b6df-dc877d09c45b"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_MedicationStatement|1.0.0"/>
+              </meta>
+              <status value="active">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Aktiv"/>
+                      </extension>
+                  </extension>
+              </status>
+              <medicationReference>
+                  <reference value="urn:uuid:65718e2b-5c34-46f4-8c0d-b14ca9719b9c"/>
+              </medicationReference>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <dosage>
+                  <timing>
+                      <repeat>
+                          <when value="MORN">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="morgens"/>
+                                  </extension>
+                              </extension>
+                          </when>
+                      </repeat>
+                  </timing>
+                  <route>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="26643006"/>
+                          <display value="Oral route (qualifier value)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="oral"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </route>
+                  <doseAndRate>
+                      <doseQuantity>
+                          <value value="1"/>
+                          <unit value="Stück"/>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+                          <code value="1"/>
+                      </doseQuantity>
+                  </doseAndRate>
+              </dosage>
+          </MedicationStatement>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:89a69645-91c2-4877-b735-f287f1edfdee"/>
+      <resource>
+          <MedicationStatement>
+              <id value="89a69645-91c2-4877-b735-f287f1edfdee"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_MedicationStatement|1.0.0"/>
+              </meta>
+              <status value="active">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Aktiv"/>
+                      </extension>
+                  </extension>
+              </status>
+              <medicationReference>
+                  <reference value="urn:uuid:36ea82cf-e2fe-4c0d-8509-91e89e1666b9"/>
+              </medicationReference>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <dosage>
+                  <timing>
+                      <repeat>
+                          <when value="MORN">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="morgens"/>
+                                  </extension>
+                              </extension>
+                          </when>
+                      </repeat>
+                  </timing>
+                  <route>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="26643006"/>
+                          <display value="Oral route (qualifier value)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="oral"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </route>
+                  <doseAndRate>
+                      <doseQuantity>
+                          <value value="1"/>
+                          <unit value="Stück"/>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+                          <code value="1"/>
+                      </doseQuantity>
+                  </doseAndRate>
+              </dosage>
+              <dosage>
+                  <timing>
+                      <repeat>
+                          <when value="EVE">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="abends"/>
+                                  </extension>
+                              </extension>
+                          </when>
+                      </repeat>
+                  </timing>
+                  <route>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="26643006"/>
+                          <display value="Oral route (qualifier value)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="oral"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </route>
+                  <doseAndRate>
+                      <doseQuantity>
+                          <value value="1"/>
+                          <unit value="Stück"/>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+                          <code value="1"/>
+                      </doseQuantity>
+                  </doseAndRate>
+              </dosage>
+          </MedicationStatement>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:e8f70d9b-cfb9-4fb3-9f1e-297f9a8b393c"/>
+      <resource>
+          <MedicationStatement>
+              <id value="e8f70d9b-cfb9-4fb3-9f1e-297f9a8b393c"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_MedicationStatement|1.0.0"/>
+              </meta>
+              <status value="active">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Aktiv"/>
+                      </extension>
+                  </extension>
+              </status>
+              <medicationReference>
+                  <reference value="urn:uuid:d6354022-8ae7-4347-aec3-f6bbae931dbb"/>
+              </medicationReference>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <dosage>
+                  <timing>
+                      <repeat>
+                          <when value="MORN">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="morgens"/>
+                                  </extension>
+                              </extension>
+                          </when>
+                      </repeat>
+                  </timing>
+                  <route>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="26643006"/>
+                          <display value="Oral route (qualifier value)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="oral"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </route>
+                  <doseAndRate>
+                      <doseQuantity>
+                          <value value="1"/>
+                          <unit value="Stück"/>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+                          <code value="1"/>
+                      </doseQuantity>
+                  </doseAndRate>
+              </dosage>
+          </MedicationStatement>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:3d5edec9-db42-405f-8c1b-ccee78d73190"/>
+      <resource>
+          <MedicationStatement>
+              <id value="3d5edec9-db42-405f-8c1b-ccee78d73190"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_MedicationStatement|1.0.0"/>
+              </meta>
+              <status value="active">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Aktiv"/>
+                      </extension>
+                  </extension>
+              </status>
+              <statusReason>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="182878004"/>
+                      <display value="Medication increased (finding)"/>
+                  </coding>
+              </statusReason>
+              <medicationReference>
+                  <reference value="urn:uuid:6911a89c-3f7c-49b7-acc7-34eabae8a111"/>
+              </medicationReference>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <dosage>
+                  <timing>
+                      <repeat>
+                          <when value="MORN">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="morgens"/>
+                                  </extension>
+                              </extension>
+                          </when>
+                      </repeat>
+                  </timing>
+                  <route>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="26643006"/>
+                          <display value="Oral route (qualifier value)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="oral"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </route>
+                  <doseAndRate>
+                      <doseQuantity>
+                          <value value="1"/>
+                          <unit value="Stück"/>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+                          <code value="1"/>
+                      </doseQuantity>
+                  </doseAndRate>
+              </dosage>
+              <dosage>
+                  <timing>
+                      <repeat>
+                          <when value="NOON">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="mittags"/>
+                                  </extension>
+                              </extension>
+                          </when>
+                      </repeat>
+                  </timing>
+                  <route>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="26643006"/>
+                          <display value="Oral route (qualifier value)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="oral"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </route>
+                  <doseAndRate>
+                      <doseQuantity>
+                          <value value="0.5"/>
+                          <unit value="Stück"/>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+                          <code value="1"/>
+                      </doseQuantity>
+                  </doseAndRate>
+              </dosage>
+          </MedicationStatement>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:f9d698bf-bab7-4b22-8043-1c057909fc94"/>
+      <resource>
+          <MedicationStatement>
+              <id value="f9d698bf-bab7-4b22-8043-1c057909fc94"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_MedicationStatement|1.0.0"/>
+              </meta>
+              <status value="active">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Aktiv"/>
+                      </extension>
+                  </extension>
+              </status>
+              <medicationReference>
+                  <reference value="urn:uuid:271aead4-6751-470c-beea-b8b03226ffe0"/>
+              </medicationReference>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <dosage>
+                  <timing>
+                      <repeat>
+                          <when value="MORN">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="morgens"/>
+                                  </extension>
+                              </extension>
+                          </when>
+                      </repeat>
+                  </timing>
+                  <route>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="26643006"/>
+                          <display value="Oral route (qualifier value)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="oral"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </route>
+                  <doseAndRate>
+                      <doseQuantity>
+                          <value value="1"/>
+                          <unit value="Stück"/>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+                          <code value="1"/>
+                      </doseQuantity>
+                  </doseAndRate>
+              </dosage>
+          </MedicationStatement>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:65718e2b-5c34-46f4-8c0d-b14ca9719b9c"/>
+      <resource>
+          <Medication>
+              <id value="65718e2b-5c34-46f4-8c0d-b14ca9719b9c"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Medication|1.0.0"/>
+              </meta>
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+                  <valueCodeableConcept>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="763158003"/>
+                          <display value="Medicinal product (product)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="Fertigarzneimittel"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </valueCodeableConcept>
+              </extension>
+              <code>
+                  <coding>
+                      <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+                      <version value="19"/>
+                      <code value="A01AD05"/>
+                      <display value="Acetylsalicylsäure"/>
+                  </coding>
+              </code>
+              <form>
+                  <coding>
+                      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+                      <version value="1.09"/>
+                      <code value="TAB"/>
+                      <display value="Tabletten"/>
+                  </coding>
+              </form>
+              <amount>
+                  <numerator>
+                      <value value="100"/>
+                      <unit value="mg"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="mg"/>
+                  </numerator>
+                  <denominator>
+                      <value value="1"/>
+                      <unit value="PerTotalCount"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="/{tot}"/>
+                  </denominator>
+              </amount>
+          </Medication>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:36ea82cf-e2fe-4c0d-8509-91e89e1666b9"/>
+      <resource>
+          <Medication>
+              <id value="36ea82cf-e2fe-4c0d-8509-91e89e1666b9"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Medication|1.0.0"/>
+              </meta>
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+                  <valueCodeableConcept>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="763158003"/>
+                          <display value="Medicinal product (product)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="Fertigarzneimittel"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </valueCodeableConcept>
+              </extension>
+              <code>
+                  <coding>
+                      <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+                      <version value="19"/>
+                      <code value="C07AB02"/>
+                      <display value="Metoprolol"/>
+                  </coding>
+              </code>
+              <form>
+                  <coding>
+                      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+                      <version value="1.09"/>
+                      <code value="TAB"/>
+                      <display value="Tabletten"/>
+                  </coding>
+              </form>
+              <amount>
+                  <numerator>
+                      <value value="47.5"/>
+                      <unit value="mg"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="mg"/>
+                  </numerator>
+                  <denominator>
+                      <value value="1"/>
+                      <unit value="PerTotalCount"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="/{tot}"/>
+                  </denominator>
+              </amount>
+          </Medication>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:d6354022-8ae7-4347-aec3-f6bbae931dbb"/>
+      <resource>
+          <Medication>
+              <id value="d6354022-8ae7-4347-aec3-f6bbae931dbb"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Medication|1.0.0"/>
+              </meta>
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+                  <valueCodeableConcept>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="763158003"/>
+                          <display value="Medicinal product (product)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="Fertigarzneimittel"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </valueCodeableConcept>
+              </extension>
+              <code>
+                  <coding>
+                      <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+                      <version value="19"/>
+                      <code value="C09AA05"/>
+                      <display value="Ramipril"/>
+                  </coding>
+              </code>
+              <form>
+                  <coding>
+                      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+                      <version value="1.09"/>
+                      <code value="TAB"/>
+                      <display value="Tabletten"/>
+                  </coding>
+              </form>
+              <amount>
+                  <numerator>
+                      <value value="5"/>
+                      <unit value="mg"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="mg"/>
+                  </numerator>
+                  <denominator>
+                      <value value="1"/>
+                      <unit value="PerTotalCount"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="/{tot}"/>
+                  </denominator>
+              </amount>
+          </Medication>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:6911a89c-3f7c-49b7-acc7-34eabae8a111"/>
+      <resource>
+          <Medication>
+              <id value="6911a89c-3f7c-49b7-acc7-34eabae8a111"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Medication|1.0.0"/>
+              </meta>
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+                  <valueCodeableConcept>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="763158003"/>
+                          <display value="Medicinal product (product)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="Fertigarzneimittel"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </valueCodeableConcept>
+              </extension>
+              <code>
+                  <coding>
+                      <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+                      <version value="19"/>
+                      <code value="C03CA04"/>
+                      <display value="Torasemid"/>
+                  </coding>
+              </code>
+              <form>
+                  <coding>
+                      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+                      <version value="1.09"/>
+                      <code value="TAB"/>
+                      <display value="Tabletten"/>
+                  </coding>
+              </form>
+              <amount>
+                  <numerator>
+                      <value value="5"/>
+                      <unit value="mg"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="mg"/>
+                  </numerator>
+                  <denominator>
+                      <value value="1"/>
+                      <unit value="PerTotalCount"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="/{tot}"/>
+                  </denominator>
+              </amount>
+          </Medication>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:271aead4-6751-470c-beea-b8b03226ffe0"/>
+      <resource>
+          <Medication>
+              <id value="271aead4-6751-470c-beea-b8b03226ffe0"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Medication|1.0.0"/>
+              </meta>
+              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+                  <valueCodeableConcept>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                          <code value="763158003"/>
+                          <display value="Medicinal product (product)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="Fertigarzneimittel"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </valueCodeableConcept>
+              </extension>
+              <code>
+                  <coding>
+                      <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+                      <version value="19"/>
+                      <code value="C10AA01"/>
+                      <display value="Simvastatin"/>
+                  </coding>
+              </code>
+              <form>
+                  <coding>
+                      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+                      <version value="1.09"/>
+                      <code value="TAB"/>
+                      <display value="Tabletten"/>
+                  </coding>
+              </form>
+              <amount>
+                  <numerator>
+                      <value value="40"/>
+                      <unit value="mg"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="mg"/>
+                  </numerator>
+                  <denominator>
+                      <value value="1"/>
+                      <unit value="PerTotalCount"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="/{tot}"/>
+                  </denominator>
+              </amount>
+          </Medication>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:3aff2b4a-a471-4281-a656-34cab1b82179"/>
+      <resource>
+          <Observation>
+              <id value="3aff2b4a-a471-4281-a656-34cab1b82179"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Blood_Pressure|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                      <code value="vital-signs"/>
+                  </coding>
+              </category>
+              <category>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="8716-3"/>
+                      <display value="Vital signs"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="85354-9"/>
+                      <display value="Blood pressure panel with all children optional">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Blutdruck"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                      <code value="75367002"/>
+                      <display value="Blood pressure (observable entity)">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Blutdruck"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <effectiveDateTime value="2022-01-14"/>
+              <component>
+                  <code>
+                      <coding>
+                          <system value="http://loinc.org"/>
+                          <version value="2.71"/>
+                          <code value="8480-6"/>
+                          <display value="Systolic blood pressure">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="systolischer Blutdruck"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                          <code value="271649006"/>
+                          <display value="Systolic blood pressure (observable entity)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="systolischer Blutdruck"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </code>
+                  <valueQuantity>
+                      <value value="135"/>
+                      <unit value="mm Hg"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="mm[Hg]"/>
+                  </valueQuantity>
+              </component>
+              <component>
+                  <code>
+                      <coding>
+                          <system value="http://loinc.org"/>
+                          <version value="2.71"/>
+                          <code value="8462-4"/>
+                          <display value="Diastolic blood pressure">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="diastolischer Blutdruck"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                      <coding>
+                          <system value="http://snomed.info/sct"/>
+                          <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+                          <code value="271650006"/>
+                          <display value="Diastolic blood pressure (observable entity)">
+                              <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                  <extension url="content">
+                                      <valueString value="diastolischer Blutdruck"/>
+                                  </extension>
+                              </extension>
+                          </display>
+                      </coding>
+                  </code>
+                  <valueQuantity>
+                      <value value="85"/>
+                      <unit value="mm Hg"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="mm[Hg]"/>
+                  </valueQuantity>
+              </component>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:96c1ff2b-5d52-48ed-a11d-8a0d8f848058"/>
+      <resource>
+          <Observation>
+              <id value="96c1ff2b-5d52-48ed-a11d-8a0d8f848058"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Body_Weight|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                      <code value="vital-signs"/>
+                  </coding>
+              </category>
+              <category>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="8716-3"/>
+                      <display value="Vital signs"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="29463-7"/>
+                      <display value="Body weight">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Körpergewicht"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="27113001"/>
+                      <display value="Body weight (observable entity)">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Körpergewicht"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <effectiveDateTime value="2022-01-14"/>
+              <valueQuantity>
+                  <value value="76"/>
+                  <unit value="kg"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="kg"/>
+              </valueQuantity>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:c25ca6f7-05a2-4ba4-9eb3-eb6f093917bc"/>
+      <resource>
+          <Observation>
+              <id value="c25ca6f7-05a2-4ba4-9eb3-eb6f093917bc"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Heart_Rate|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                      <code value="vital-signs"/>
+                  </coding>
+              </category>
+              <category>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="8716-3"/>
+                      <display value="Vital signs"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="8867-4"/>
+                      <display value="Heart rate">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Herzfrequenz"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="364075005"/>
+                      <display value="Heart rate (observable entity)">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Herzfrequenz (Herzfrequenz)"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <effectiveDateTime value="2022-01-14"/>
+              <valueQuantity>
+                  <value value="65"/>
+                  <unit value="per minute"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="/min"/>
+              </valueQuantity>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:8d0b4678-5831-4f1d-a8c6-221594232845"/>
+      <resource>
+          <Observation>
+              <id value="8d0b4678-5831-4f1d-a8c6-221594232845"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Patient_History|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="35090-0"/>
+                      <display value="Patient history"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="363788007:704326004=128292002"/>
+                      <display value="Clinical history/examination observable (observable entity) : Precondition (attribute) = Chronic disease of cardiovascular system (disorder)">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Anamnese der kardialen Grunderkrankung"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <valueString value="Chronische Herzinsuffizienz mit rezidivierenden Dekompensationen, zuletzt 10/2020 und 05/2021"/>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:5898df32-7a2a-4705-a858-ac1a2b902f4e"/>
+      <resource>
+          <Observation>
+              <id value="5898df32-7a2a-4705-a858-ac1a2b902f4e"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Patient_History|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="35090-0"/>
+                      <display value="Patient history"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="363788007:704320005=422625006"/>
+                      <display value="Clinical history/examination observable (observable entity) : Towards (attribute) = History of present illness section (record artifact)">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Anamnese der aktuellen Krankheit"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <valueString value="Seit Beginn des telemedizinischen Monitorings keine Hospitalisierung aufgrund kardialer Dekompensation."/>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:206abe47-817f-456a-a7da-0e819d8070bb"/>
+      <resource>
+          <Observation>
+              <id value="206abe47-817f-456a-a7da-0e819d8070bb"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Patient_History|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="35090-0"/>
+                      <display value="Patient history"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="827181004"/>
+                      <display value="Risk of cardiovascular disease (observable entity)">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="kardiovaskuläre Risikofaktoren"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <valueString value="Hypertonie, Z.n. Nikotinabusus, positive Familienanamnese"/>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:c64ee89f-1276-4679-9ae0-b5ec117623c6"/>
+      <resource>
+          <Observation>
+              <id value="c64ee89f-1276-4679-9ae0-b5ec117623c6"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Patient_History|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="35090-0"/>
+                      <display value="Patient history"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+                      <code value="160476009"/>
+                      <display value="Social / personal history observable (observable entity)">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Sozialanamanese"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <valueString value="Verwitwet, allein lebend, ambulanter Pflegedienst"/>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:ac20f513-6c71-459e-885d-61409c030e8a"/>
+      <resource>
+          <Observation>
+              <id value="ac20f513-6c71-459e-885d-61409c030e8a"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Procedure_And_Recommendations|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="18776-5"/>
+                      <display value="Plan of care note"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="93341-6"/>
+                      <display value="Medication recommendation">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Empfehlungen zur Medikation"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <valueString value="Torasemid-Dosis ggf. gewichts- und symptomadaptiert weiter anpassen"/>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:1e44b94e-ffaa-46ad-8f3b-8514ab710e61"/>
+      <resource>
+          <Observation>
+              <id value="1e44b94e-ffaa-46ad-8f3b-8514ab710e61"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Clinical_Course|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="89261-2"/>
+                      <display value="Clinical course"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <version value="2.71"/>
+                      <code value="75497-8"/>
+                      <display value="Telehealth Progress note">
+                          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                              <extension url="content">
+                                  <valueString value="Verlaufsnotiz Telemedizin"/>
+                              </extension>
+                          </extension>
+                      </display>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <valueString value="In dem genannten Zeitraum verlief das telemedizinische Monitoring ohne nennenswerte Ereignisse. Die Blutdruckeinstellung ist adäquat, der Gewichtsverlauf leicht steigend. Die diuretische Medikation wurde leicht erhöht."/>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:d17bb26a-18d6-4940-9887-3f438ec1f1bb"/>
+      <resource>
+          <Organization>
+              <id value="d17bb26a-18d6-4940-9887-3f438ec1f1bb"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Organization|1.0.0"/>
+              </meta>
+              <name value="Kardiologisches MVZ Potsdamer Platz"/>
+              <telecom>
+                  <system value="phone">
+                      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                          <extension url="content">
+                              <valueString value="Telefon"/>
+                          </extension>
+                      </extension>
+                  </system>
+                  <value value="030 123 5678"/>
+              </telecom>
+              <address>
+                  <!-- Strassenanschrift -->
+                  <type value="both"/>
+                  <line value="Potsdamer Platz 17, 10117 Berlin">
+                      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                          <valueString value="Potsdamer Platz"/>
+                      </extension>
+                      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                          <valueString value="17"/>
+                      </extension>
+                  </line>
+                  <city value="Berlin"/>
+                  <postalCode value="10117"/>
+                  <country value="D"/>
+              </address>
+          </Organization>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:9f7e107b-597e-4e43-bb7d-1266d877e277"/>
+      <resource>
+          <Organization>
+              <id value="9f7e107b-597e-4e43-bb7d-1266d877e277"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Organization|1.0.0"/>
+              </meta>
+              <name value="Hausarztpraxis Potsdamer Platz"/>
+              <telecom>
+                  <system value="phone">
+                      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                          <extension url="content">
+                              <valueString value="Telefon"/>
+                          </extension>
+                      </extension>
+                  </system>
+                  <value value="030 123 1234"/>
+              </telecom>
+              <address>
+                  <!-- Strassenanschrift -->
+                  <type value="both"/>
+                  <line value="Potsdamer Platz 17, 10117 Berlin">
+                      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                          <valueString value="Potsdamer Platz"/>
+                      </extension>
+                      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                          <valueString value="17"/>
+                      </extension>
+                  </line>
+                  <city value="Berlin"/>
+                  <postalCode value="10117"/>
+                  <country value="D"/>
+              </address>
+          </Organization>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+      <resource>
+          <Patient>
+              <id value="b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Patient|1.0.0"/>
+              </meta>
+              <identifier>
+                  <use value="official"/>
+                  <type>
+                      <coding>
+                          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"/>
+                          <code value="kvk"/>
+                          <display value="Krankenversichertenkarte"/>
+                      </coding>
+                  </type>
+                  <system value="http://fhir.de/NamingSystem/gkv/kvk-versichertennummer"/>
+                  <value value="A123456789"/>
+              </identifier>
+              <name>
+                  <use value="official"/>
+                  <text value="Karin Anders"/>
+                  <family value="Anders">
+                      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                          <valueString value="Anders"/>
+                      </extension>
+                  </family>
+                  <given value="Karin"/>
+              </name>
+              <gender value="female">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Weiblich"/>
+                      </extension>
+                  </extension>
+              </gender>
+              <birthDate value="1975-12-31"/>
+              <address>
+                  <!-- Strassenanschrift -->
+                  <type value="both"/>
+                  <line value="Potsdamer Platz 19, 10117 Berlin">
+                      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                          <valueString value="Potsdamer Platz"/>
+                      </extension>
+                      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                          <valueString value="19"/>
+                      </extension>
+                  </line>
+                  <city value="Berlin"/>
+                  <postalCode value="10117"/>
+                  <country value="D"/>
+              </address>
+          </Patient>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:f7ea0959-b985-409c-8c83-ab9344896cc2"/>
+      <resource>
+          <PractitionerRole>
+              <id value="f7ea0959-b985-409c-8c83-ab9344896cc2"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_PractitionerRole|1.0.0"/>
+              </meta>
+              <practitioner>
+                  <reference value="urn:uuid:2716682a-9c89-43ba-b01b-88a03a8cef9b"/>
+              </practitioner>
+              <organization>
+                  <reference value="urn:uuid:9f7e107b-597e-4e43-bb7d-1266d877e277"/>
+              </organization>
+          </PractitionerRole>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:2716682a-9c89-43ba-b01b-88a03a8cef9b"/>
+      <resource>
+          <Practitioner>
+              <id value="2716682a-9c89-43ba-b01b-88a03a8cef9b"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Practitioner|1.0.0"/>
+              </meta>
+              <identifier>
+                  <use value="official"/>
+                  <type>
+                      <coding>
+                          <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                          <version value="2.9"/>
+                          <code value="LANR"/>
+                          <display value="Lifelong physician number"/>
+                      </coding>
+                  </type>
+                  <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+                  <value value="123456789"/>
+              </identifier>
+              <name>
+                  <use value="official"/>
+                  <text value="Dr. med. Ylmaz"/>
+                  <family value="Ylmaz">
+                      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                          <valueString value="Ylmaz"/>
+                      </extension>
+                  </family>
+                  <prefix value="Dr. med.">
+                      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                          <valueCode value="AC"/>
+                      </extension>
+                  </prefix>
+              </name>
+              <qualification>
+                  <code>
+                      <coding>
+                          <system value="urn:oid:1.2.276.0.76.5.514"/>
+                          <version value="1.2.1"/>
+                          <code value="11001"/>
+                          <display value="FA Allgemeinmedizin"/>
+                      </coding>
+                  </code>
+              </qualification>
+              <qualification>
+                  <code>
+                      <coding>
+                          <system value="urn:oid:1.2.276.0.76.5.514"/>
+                          <version value="1.2.1"/>
+                          <code value="141114"/>
+                          <display value="FA Innere Medizin und Kardiologie"/>
+                      </coding>
+                  </code>
+              </qualification>
+          </Practitioner>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:8d925c9e-c919-49ed-a52e-096723c0e61a"/>
+      <resource>
+          <Procedure>
+              <id value="8d925c9e-c919-49ed-a52e-096723c0e61a"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Procedure|1.0.0"/>
+              </meta>
+              <status value="completed">
+                  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                      <extension url="content">
+                          <valueString value="Erledigt"/>
+                      </extension>
+                  </extension>
+              </status>
+              <code>
+                  <text value="PCI und Stentimplantation der LCA"/>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <performedDateTime value="2013-02-07"/>
+              <recorder>
+                  <reference value="urn:uuid:2716682a-9c89-43ba-b01b-88a03a8cef9b"/>
+              </recorder>
+          </Procedure>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:1645a568-c55d-46e0-9929-c21c29f6c689"/>
+      <resource>
+          <Observation>
+              <id value="1645a568-c55d-46e0-9929-c21c29f6c689"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Free|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                      <code value="imaging"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <code value="250908004"/>
+                      <display value="Left ventricular ejection fraction (observable entity)"/>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <effectiveDateTime value="2022-02-14"/>
+              <valueQuantity>
+                  <value value="45"/>
+                  <unit value="percent"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="%"/>
+              </valueQuantity>
+          </Observation>
+      </resource>
+  </entry>
+  <entry>
+      <fullUrl value="urn:uuid:ab96307a-7f8e-405f-9f04-26d623116959"/>
+      <resource>
+          <Observation>
+              <id value="ab96307a-7f8e-405f-9f04-26d623116959"/>
+              <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Free|1.0.0"/>
+              </meta>
+              <status value="final"/>
+              <category>
+                  <coding>
+                      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                      <code value="procedure"/>
+                  </coding>
+              </category>
+              <code>
+                  <coding>
+                      <system value="http://snomed.info/sct"/>
+                      <code value="250769004"/>
+                      <display value="Pulmonary artery diastolic pressure (observable entity)"/>
+                  </coding>
+              </code>
+              <subject>
+                  <reference value="urn:uuid:b5df1dd6-237b-4057-9859-2f7fbacd3261"/>
+              </subject>
+              <effectiveDateTime value="2022-02-14"/>
+              <valueQuantity>
+                  <value value="16"/>
+                  <unit value="mmHg"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mm[Hg]"/>
+              </valueQuantity>
+              <device>
+                  <reference value="urn:uuid:b6d7dd84-9049-477c-9841-a4a340baeeaf"/>
+              </device>
+          </Observation>
+      </resource>
+  </entry>
+</Bundle>
