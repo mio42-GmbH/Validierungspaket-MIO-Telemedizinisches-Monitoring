@@ -1,0 +1,26 @@
+<CareTeam xmlns="http://hl7.org/fhir">
+	<id value="846a5feb-840f-4232-8750-6f4cd40f3174" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_CareTeam|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<subject>
+		<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+	</subject>
+	<participant>
+		<role>
+			<coding>
+				<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_TELE_Role_CareTeam" />
+				<version value="1.0.0" />
+				<code value="TMZ" />
+				<display value="Telemedizinisches Zentrum" />
+			</coding>
+		</role>
+		<member>
+			<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+		</member>
+	</participant>
+</CareTeam>

@@ -1,0 +1,54 @@
+<Goal xmlns="http://hl7.org/fhir">
+	<id value="dca581cc-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Goal_Medication_Target|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_TELE_Goal_Medication_Target_End|1.0.0">
+		<valueDate value="2020-02-01" />
+	</extension>
+	<lifecycleStatus value="active">
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Aktiv" />
+			</extension>
+		</extension>
+	</lifecycleStatus>
+	<description>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="1148601009" />
+			<display value="Able to thrive (finding)" />
+		</coding>
+		<text value="Test" />
+	</description>
+	<subject>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003" />
+	</subject>
+	<startDate value="2020-02-02" />
+	<target>
+		<measure>
+			<coding>
+				<system value="http://loinc.org" />
+				<version value="2.71" />
+				<code value="8310-5" />
+				<display value="Body temperature" />
+			</coding>
+			<text value="Test" />
+		</measure>
+		<detailQuantity>
+			<value value="1" />
+			<comparator value="&gt;" />
+			<unit value="1" />
+			<system value="http://unitsofmeasure.org" />
+			<code value="1" />
+		</detailQuantity>
+	</target>
+	<note>
+		<text value="Test" />
+	</note>
+</Goal>

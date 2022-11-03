@@ -1,0 +1,17 @@
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="d00ab21d-5d9f-4055-9c54-7055aad5bee0"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Condition_Diagnosis|1.0.0"/>
+	</meta>
+	<code>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/dimdi/alpha-id"/>
+			<version value="2022"/>
+			<code value="I9233"/>
+			<display value="Trisomie 21, meiotische Non-disjunction" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73"/>
+	</subject>
+</Condition>

@@ -1,0 +1,27 @@
+<Appointment xmlns="http://hl7.org/fhir">
+	<id value="846a5feb-840f-4232-8750-6f4cd40f3174" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Appointment|1.0.0" />
+	</meta>
+	<status value="booked">
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Gebucht" />
+			</extension>
+		</extension>
+	</status>
+	<start value="2015-02-07T13:28:17.239+02:00" />
+	<end value="2015-02-07T13:29:17.239+02:00" />
+	<participant>
+		<actor>
+			<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+		</actor>
+		<status value="accepted">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+				<extension url="content">
+					<valueString value="bestätigt" />
+				</extension>
+			</extension>
+		</status>
+	</participant>
+</Appointment>

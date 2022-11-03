@@ -1,0 +1,91 @@
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="d00ab21d-5d9f-4055-9c54-7055aad5bee0"/>
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Condition_Diagnosis|1.0.0"/>
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<extension url="http://hl7.org/fhir/StructureDefinition/condition-assertedDate">
+		<valueDateTime value="2020-02-11" />
+	</extension>
+	<clinicalStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+			<version value="4.0.1"/>
+			<code value="resolved"/>
+			<display value="Resolved" >
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                    <extension url="content">
+                        <valueString value="behoben"/>
+                    </extension>
+                </extension>
+			</display>
+		</coding>
+	</clinicalStatus>
+	<severity>
+		<coding>
+		<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+			<code value="255604002"/>
+			<display value="Mild" >
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                    <extension url="content">
+                        <valueString value="leicht"/>
+                    </extension>
+                </extension>
+			</display>
+		</coding>
+	</severity>
+	<code>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/dimdi/alpha-id"/>
+			<version value="2022"/>
+			<code value="I9233"/>
+			<display value="Trisomie 21, meiotische Non-disjunction" />
+		</coding>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+			<code value="168118008"/>
+			<display value="Trisomy 21 in amniotic fetal cell (finding)">
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                    <extension url="content">
+                        <valueString value="Trisomie 21"/>
+                    </extension>
+                </extension>
+			</display>
+		</coding>
+		<coding>
+			<system value="http://www.orpha.net"/>
+			<version value="5.52.0"/>
+			<code value="870"/>
+			<display value="Trisomie 21" />
+		</coding>
+		<text value="Trisomie 21" />
+	</code>
+	<bodySite>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+			<code value="38266002"/>
+			<display value="Entire body as a whole (body structure)">
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                    <extension url="content">
+                        <valueString value="Ganzer Körper"/>
+                    </extension>
+                </extension>
+			</display>
+		</coding>
+	</bodySite>
+	<subject>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73"/>
+	</subject>
+	<onsetDateTime value="2020-05-24"/>
+	<abatementDateTime value="2020-05-24"/>
+	<recordedDate value="2020-05-24"/>
+	<note>
+		<text value="test" />
+	</note>
+</Condition>

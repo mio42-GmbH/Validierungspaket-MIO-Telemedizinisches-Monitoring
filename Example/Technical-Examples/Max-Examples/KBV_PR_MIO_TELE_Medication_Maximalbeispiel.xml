@@ -1,0 +1,87 @@
+<Medication xmlns="http://hl7.org/fhir">
+	<id value="dca58334-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Medication|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+				<code value="763158003" />
+				<display value="Medicinal product (product)">
+					<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+						<extension url="content">
+							<valueString value="Fertigarzneimittel" />
+						</extension>
+					</extension>
+				</display>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<code>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/ifa/pzn" />
+			<version value="0.2" />
+			<code value="12410111" />
+			<display value="ZYTIGA® 500 mg Tabletten" />
+		</coding>
+		<text value="Zytiga Tabletten" />
+	</code>
+	<form>
+		<coding>
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM" />
+			<version value="1.08" />
+			<code value="AMP" />
+			<display value="Ampullen" />
+		</coding>
+		<text value="Ampullen" />
+	</form>
+	<amount>
+		<numerator>
+			<value value="1" />
+			<unit value="1" />
+			<system value="http://unitsofmeasure.org" />
+			<code value="1" />
+		</numerator>
+		<denominator>
+			<value value="1" />
+			<unit value="1" />
+			<system value="http://unitsofmeasure.org" />
+			<code value="1" />
+		</denominator>
+	</amount>
+	<ingredient>
+		<itemCodeableConcept>
+			<coding>
+				<system value="http://fhir.de/CodeSystem/ask" />
+				<version value="1.3.0" />
+				<code value="37290" />
+				<display value="Abirateronacetat" />
+			</coding>
+			<text value="Abirateronacetat" />
+		</itemCodeableConcept>
+		<strength>
+			<numerator>
+				<value value="250" />
+				<unit value="mg" />
+				<system value="http://unitsofmeasure.org" />
+				<code value="mg" />
+			</numerator>
+			<denominator>
+				<value value="1" />
+				<unit value="Pastille (unit of presentation)" />
+				<system value="http://snomed.info/sct" />
+				<code value="733004002" />
+			</denominator>
+		</strength>
+	</ingredient>
+	<batch>
+		<lotNumber value="12684654" />
+		<expirationDate value="2020-02-02" />
+	</batch>
+</Medication>

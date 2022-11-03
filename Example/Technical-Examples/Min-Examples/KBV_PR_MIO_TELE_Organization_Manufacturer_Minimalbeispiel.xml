@@ -1,0 +1,7 @@
+<Organization xmlns="http://hl7.org/fhir">
+	<id value="dca59a90-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Organization_Manufacturer|1.0.0" />
+	</meta>
+	<name value="Test" />
+</Organization>

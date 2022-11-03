@@ -1,0 +1,54 @@
+<DeviceUseStatement xmlns="http://hl7.org/fhir">
+	<id value="dca58050-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_DeviceUseStatement|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<status value="active">
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Aktiv" />
+			</extension>
+		</extension>
+	</status>
+	<subject>
+		<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+	</subject>
+	<timingPeriod>
+		<start value="2020-01-01" />
+		<end value="2020-01-10" />
+	</timingPeriod>
+	<recordedOn value="2020-01-10" />
+	<device>
+		<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+	</device>
+	<reasonCode>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="409630004" />
+			<display value="Asymptomatic viremia (finding)" />
+		</coding>
+		<text value="Test" />
+	</reasonCode>
+	<reasonReference>
+		<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+	</reasonReference>
+	<bodySite>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131"/>
+			<code value="38266002"/>
+			<display value="Entire body as a whole (body structure)">
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                    <extension url="content">
+                        <valueString value="Ganzer Körper"/>
+                    </extension>
+                </extension>
+			</display>
+		</coding>
+	</bodySite>
+</DeviceUseStatement>

@@ -1,0 +1,32 @@
+<ServiceRequest xmlns="http://hl7.org/fhir">
+	<id value="31c8d389-8f30-4076-9e85-a6c6d772eb13" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_ServiceRequest_Planned_Procedure|1.0.0" />
+	</meta>
+	<status value="completed" >
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Erledigt" />
+			</extension>
+		</extension>
+	</status>
+	<intent value="directive" >
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Anweisung" />
+			</extension>
+		</extension>
+	</intent>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="71388002" />
+			<display value="Procedure (procedure)" />
+		</coding>
+		<text value="Test-Prozedur" />
+	</code>
+	<subject>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+	</subject>
+</ServiceRequest>

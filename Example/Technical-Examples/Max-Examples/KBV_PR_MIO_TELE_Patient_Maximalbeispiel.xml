@@ -1,0 +1,91 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="dca59b4e-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Patient|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<identifier>
+		<!--GKV -->
+		<use value="official" />
+		<type>
+			<coding>
+				<system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+				<code value="GKV" />
+				<display value="Gesetzliche Krankenversicherung" />
+			</coding>
+		</type>
+		<system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+		<value value="P234567890" />
+	</identifier>	
+	<name>
+		<use value="official" />
+		<text value="Ludger Königsstein Graf von Mangels" />
+		<family value="Königsstein">
+			<extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+				<valueString value="Graf" />
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+				<valueString value="Königsstein" />
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+				<valueString value="von" />
+			</extension>
+		</family>
+		<given value="Ludger" />
+	</name>
+	<telecom>
+		<system value="phone" >
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+					<extension url="content">
+						<valueString value="Telefonnummer" />
+					</extension>
+				</extension>
+				</system>
+		<value value="012345678901"/>
+	</telecom>
+	
+	<gender value="male" />
+	<birthDate value="1935-06-22" />
+	<address>
+		
+		<type value="both" />
+		<line value="Musterweg 42 Hinterhof">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="Musterweg" />
+			</extension>
+			
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="42" />
+			</extension>
+			
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+				<valueString value="Hinterhof" />
+			</extension>
+		</line>
+		
+		<city value="Berlin" />
+		<postalCode value="10787" />
+		<country value="D" />
+	</address>
+	<communication>
+		<language>
+			<coding>
+				<system value="urn:ietf:bcp:47" />
+				<code value="de" />
+				<display value="German" />
+			</coding>
+		</language>
+	</communication>
+	<communication>
+		<language>
+			<coding>
+				<system value="urn:ietf:bcp:47" />
+				<code value="fi" />
+				<display value="Finnish" />
+			</coding>
+		</language>
+	</communication>
+</Patient>

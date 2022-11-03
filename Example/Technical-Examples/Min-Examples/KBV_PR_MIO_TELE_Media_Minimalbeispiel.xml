@@ -1,0 +1,20 @@
+<Media xmlns="http://hl7.org/fhir">
+	<id value="b7d93e90-ea59-47f9-879c-e6a88fc04478" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Media|1.0.0" />
+	</meta>
+  <status value="completed" />
+  <subject>
+		<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+	</subject>
+  <content>
+    <contentType value="image/png" >
+      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+        <extension url="content">
+          <valueString value="PNG-Bild" />
+        </extension>
+      </extension>
+    </contentType>
+    <data value="base64dategoeshere" />
+  </content>
+</Media>

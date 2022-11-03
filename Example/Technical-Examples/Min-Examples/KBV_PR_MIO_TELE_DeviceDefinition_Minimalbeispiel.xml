@@ -1,0 +1,9 @@
+<DeviceDefinition xmlns="http://hl7.org/fhir">
+	<id value="dca5a990-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_DeviceDefinition|1.0.0" />
+	</meta>
+	<type>
+		<text value="Armband" />
+	</type>
+</DeviceDefinition>

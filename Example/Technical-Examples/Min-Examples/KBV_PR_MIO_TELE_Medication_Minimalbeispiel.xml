@@ -1,0 +1,31 @@
+<Medication xmlns="http://hl7.org/fhir">
+	<id value="dca58334-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Medication|1.0.0" />
+	</meta>
+	<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+				<code value="763158003" />
+				<display value="Medicinal product (product)">
+					<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+						<extension url="content">
+							<valueString value="Fertigarzneimittel" />
+						</extension>
+					</extension>
+				</display>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<code>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/ifa/pzn" />
+			<version value="0.2" />
+			<code value="12410111" />
+			<display value="ZYTIGA® 500 mg Tabletten" />
+		</coding>
+	</code>
+
+</Medication>

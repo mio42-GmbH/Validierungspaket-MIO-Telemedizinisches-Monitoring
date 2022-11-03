@@ -1,0 +1,124 @@
+<Procedure xmlns="http://hl7.org/fhir">
+	<id value="dca59d88-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Procedure|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<status value="not-done">
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Nicht durchgeführt" />
+			</extension>
+		</extension>
+	</status>
+	<statusReason>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="395175006" />
+			<display value="Bupropion contraindicated (situation)" />
+		</coding>
+		<text value="Der Patient hatte eine allergische Reaktion auf Bupropion." />
+	</statusReason>
+	<category>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="24642003" />
+			<display value="Psychiatry procedure or service (procedure)">
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+					<extension url="content">
+						<valueString value="Psychiatrisches Verfahren oder Dienstleistung" />
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<text value="Psychiatrische Besprechung" />
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="10847001" />
+			<display value="Bronchoscopy (procedure)" />
+		</coding>
+		<text value="Einsatz einer Augenklappe" />
+	</code>
+	<subject>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+	</subject>
+	<performedDateTime value="2020-01-12" />
+	<recorder>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+	</recorder>
+	<performer>
+		<actor>
+			<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+		</actor>
+	</performer>
+	<reasonCode>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="444332001" />
+			<display value="Aware of prognosis (finding)" />
+		</coding>
+		<text value="Einsatz einer Augenklappe" />
+	</reasonCode>
+	<reasonReference>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+	</reasonReference>
+	<bodySite>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="39801007" />
+			<display value="Application site (body structure)" />
+		</coding>
+		<text value="Beispiel-Körperstelle" />
+	</bodySite>
+	<complication>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="160245001" />
+			<display value="No current problems or disability" />
+		</coding>
+		<text value="Keine Komplikationen" />
+	</complication>
+	<complicationDetail>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+	</complicationDetail>
+	<followUp>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="360240009" />
+			<display value="Connection - action (qualifier value)">
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+					<extension url="content">
+						<valueString value="Verbindungsprozedur" />
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<text value="Verbindung wurde hergestellt" />
+	</followUp>
+	<focalDevice>
+		<action>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+				<code value="360240009" />
+				<display value="Connection - action (qualifier value)" />
+			</coding>
+			<text value="Verbindung wurde hergestellt" />
+		</action>
+		<manipulated>
+			<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+		</manipulated>
+	</focalDevice>
+</Procedure>

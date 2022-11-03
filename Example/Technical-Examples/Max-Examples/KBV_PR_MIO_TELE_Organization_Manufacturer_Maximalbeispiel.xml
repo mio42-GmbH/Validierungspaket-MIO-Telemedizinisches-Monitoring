@@ -1,0 +1,42 @@
+<Organization xmlns="http://hl7.org/fhir">
+	<id value="dca59a90-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Organization_Manufacturer|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<name value="TELE" />
+	<telecom>
+		<system value="url">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+				<extension url="content">
+					<valueString value="URL" />
+				</extension>
+			</extension>
+		</system>
+		<value value="https://test.de" />
+	</telecom>
+	<address>
+
+		<type value="both" />
+		<line value="Musterweg 42 Hinterhof">
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="Musterweg" />
+			</extension>
+
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="42" />
+			</extension>
+
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+				<valueString value="Hinterhof" />
+			</extension>
+		</line>
+
+		<city value="Berlin" />
+		<postalCode value="10787" />
+		<country value="D" />
+	</address>
+</Organization>

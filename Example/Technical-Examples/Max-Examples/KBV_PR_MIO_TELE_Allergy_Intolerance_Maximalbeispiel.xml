@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="c3fd0113-9833-4333-bfd2-fff813222b64" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_AllergyIntolerance|1.0.0" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+  </text>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Stage_Life">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+        <code value="41847000" />
+        <display value="Adulthood (qualifier value)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Erwachsener (Ab Beginn des 19. Lebensjahres)" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" />
+      <version value="4.0.1" />
+      <code value="active" />
+      <display value="Active">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Aktiv" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
+      <version value="4.0.1" />
+      <code value="unconfirmed" />
+      <display value="Unconfirmed">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Unbestätigt" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </verificationStatus>
+  <type value="allergy">
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+      <extension url="content">
+        <valueString value="Allergie" />
+      </extension>
+    </extension>
+  </type>
+  <category value="food">
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+      <extension url="content">
+        <valueString value="Lebensmittel" />
+      </extension>
+    </extension>
+  </category>
+  <criticality value="low">
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+      <extension url="content">
+        <valueString value="Niedriges Risiko" />
+      </extension>
+    </extension>
+  </criticality>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+      <code value="227493005" />
+      <display value="Cashew nuts">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Cashew Nüsse" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/ask" />
+      <version value="1.3.2" />
+      <code value="22788" />
+      <display value="Cetirizindihydrochlorid" >
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Cetirizindihydrochlorid" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+    <text value="Cashew Nüsse" />
+  </code>
+  <patient>
+    <reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+  </patient>
+  <onsetDateTime value="2020-02-20" />
+  <recorder>
+    <reference value="urn:uuid:4b1c81d0-bce7-48bb-b7e4-9764dfb1283f" />
+  </recorder>
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+        <code value="91175000" />
+        <display value="Seizure (finding)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Epileptischer Anfall" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+      <text value="Atemnot" />
+    </manifestation>
+    <onset value="2020-05-20" />
+    <severity value="mild">
+      <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+        <extension url="content">
+          <valueString value="leicht" />
+        </extension>
+      </extension>
+    </severity>
+    <exposureRoute>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+        <code value="181469002" />
+        <display value="Entire skin (body structure)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Haut" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+      <text value="Haut" />
+    </exposureRoute>
+  </reaction>
+</AllergyIntolerance>

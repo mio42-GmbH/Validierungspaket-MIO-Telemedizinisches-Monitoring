@@ -1,0 +1,72 @@
+<Device xmlns="http://hl7.org/fhir">
+	<id value="dca58050-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Device|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<identifier>
+		<system value="http://device-manufacturer.de/productnumber" />
+		<value value="12345" />
+	</identifier>
+	<definition>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003" />
+	</definition>
+	<udiCarrier>
+		<deviceIdentifier value="abc123456" />
+	</udiCarrier>
+	<status value="active">
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Aktiv" />
+			</extension>
+		</extension>
+	</status>
+	<statusReason>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/device-status-reason" />
+			<version value="4.0.1" />
+			<code value="online" />
+			<display value="Online">
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+					<extension url="content">
+						<valueString value="Online" />
+					</extension>
+				</extension>
+			</display>
+		</coding>
+	</statusReason>
+	<distinctIdentifier value="abc123" />
+	<manufactureDate value="2020-01-01" />
+	<expirationDate value="2020-01-01" />
+	<lotNumber value="35132156" />
+	<serialNumber value="66516846546" />
+	<deviceName>
+		<name value="Implantat" />
+		<type value="user-friendly-name" />
+	</deviceName>
+	<modelNumber value="66516846546" />
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="398146001" />
+			<display value="Armband (physical object)" >
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+					<extension url="content">
+						<valueString value="Armband" />
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<text value="Armband" />
+	</type>
+	<version>
+		<value value="1.2" />
+	</version>
+	<patient>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003" />
+	</patient>
+</Device>

@@ -1,0 +1,91 @@
+<Appointment xmlns="http://hl7.org/fhir">
+	<id value="846a5feb-840f-4232-8750-6f4cd40f3174" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Appointment|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<status value="booked">
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Gebucht" />
+			</extension>
+		</extension>
+	</status>
+	<serviceCategory>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+			<version value="2018-08-12" />
+			<code value="AMB" />
+			<display value="ambulatory">
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+					<extension url="content">
+						<valueString value="Ambulante Vorstellung" />
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<text value="Ambulante Vorstellung" />
+	</serviceCategory>
+	<serviceType>
+		<coding>
+			<system value="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel-erweitert" />
+			<version value="1.3.2" />
+			<code value="0100" />
+			<display value="Innere Medizin" />
+		</coding>
+		<text value="Ambulante Vorstellung" />
+	</serviceType>
+	<appointmentType>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v2-0276" />
+			<version value="2.9" />
+			<code value="CHECKUP" />
+			<display value="A routine check-up, such as an annual physical" />
+		</coding>
+		<text value="Annual routine check-up" />
+	</appointmentType>
+	<reasonCode>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="409630004" />
+			<display value="Asymptomatic viremia (finding)" />
+		</coding>
+		<text value="Test" />
+	</reasonCode>
+	<reasonReference>
+		<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+	</reasonReference>
+	<start value="2015-02-07T13:28:17.239+02:00" />
+	<end value="2015-02-07T13:28:17.239+02:00" />
+	<comment value="Test" />
+	<participant>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+				<version value="2018-08-12" />
+				<code value="SPRF" />
+				<display value="secondary performer">
+					<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+						<extension url="content">
+							<valueString value="Test" />
+						</extension>
+					</extension>
+				</display>
+			</coding>
+		</type>
+		<actor>
+			<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+		</actor>
+		<status value="accepted">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+				<extension url="content">
+					<valueString value="bestätigt" />
+				</extension>
+			</extension>
+		</status>
+	</participant>
+</Appointment>

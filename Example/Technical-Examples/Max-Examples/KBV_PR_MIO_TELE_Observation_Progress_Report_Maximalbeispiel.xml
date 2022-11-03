@@ -1,0 +1,44 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="dca58e9c-3179-11ec-8d3d-0242ac130003" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Observation_Clinical_Course|1.0.0" />
+  </meta>
+  <text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://loinc.org" />
+      <version value="2.71" />
+      <code value="89261-2" />
+      <display value="Clinical course" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+      <code value="415178003:704321009=448337001" />
+      <display value="Process (observable entity) : Characterizes (attribute) = Telemedicine consultation with patient (procedure)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Telemedizinische Konsultation mit dem Patienten" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:6a15cff6-3cc1-4bf2-ab66-1cc6316e6777" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:6a15cff6-3cc1-4bf2-ab66-1cc6316e6777" />
+  </encounter>
+  <effectiveDateTime value="2020-01-02" />
+  <performer>
+    <reference value="urn:uuid:8ad1ee6c-6164-493a-be52-c43cf49e9916" />
+  </performer>
+  <valueString value="Dieses Profil bildet den Verlauf ab." />
+</Observation>

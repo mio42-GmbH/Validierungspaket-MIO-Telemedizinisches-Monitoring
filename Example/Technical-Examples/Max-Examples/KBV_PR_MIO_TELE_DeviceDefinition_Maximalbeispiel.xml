@@ -1,0 +1,45 @@
+<DeviceDefinition xmlns="http://hl7.org/fhir">
+	<id value="dca5a990-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_DeviceDefinition|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<udiDeviceIdentifier>
+		<deviceIdentifier value="abc123" />
+		<issuer value="test-issuer" />
+		<jurisdiction value="test-jurisdiction" />
+	</udiDeviceIdentifier>
+	<manufacturerReference>
+		<reference value="urn:uuid:dca5b5d4-3179-11ec-8d3d-0242ac130003" />
+	</manufacturerReference>
+	<deviceName>
+		<name value="Implantat" />
+		<type value="model-name">
+			<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+				<extension url="content">
+					<valueString value="Modellname" />
+				</extension>
+			</extension>
+		</type>
+	</deviceName>
+	<modelNumber value="abc123" />
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="398146001" />
+			<display value="Armband (physical object)">
+				<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+					<extension url="content">
+						<valueString value="Armband" />
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<text value="Armband" />
+	</type>
+	<version value="1.2" />
+</DeviceDefinition>

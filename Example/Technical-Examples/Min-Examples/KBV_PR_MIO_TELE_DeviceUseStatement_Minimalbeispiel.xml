@@ -1,0 +1,19 @@
+<DeviceUseStatement xmlns="http://hl7.org/fhir">
+	<id value="dca58050-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_DeviceUseStatement|1.0.0" />
+	</meta>
+	<status value="active">
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Aktiv" />
+			</extension>
+		</extension>
+	</status>
+	<subject>
+		<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+	</subject>
+	<device>
+		<reference value="dca5efa4-3179-11ec-8d3d-0242ac130003" />
+	</device>
+</DeviceUseStatement>

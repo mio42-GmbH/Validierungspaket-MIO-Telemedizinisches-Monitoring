@@ -1,0 +1,19 @@
+<Goal xmlns="http://hl7.org/fhir">
+	<id value="dca581cc-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Goal_Medication_Target|1.0.0" />
+	</meta>
+	<lifecycleStatus value="active">
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Aktiv" />
+			</extension>
+		</extension>
+	</lifecycleStatus>
+	<description>
+		<text value="Test" />
+	</description>
+	<subject>
+		<reference value="urn:uuid:7d261218-8678-11eb-8dcd-0242ac130003" />
+	</subject>
+</Goal>

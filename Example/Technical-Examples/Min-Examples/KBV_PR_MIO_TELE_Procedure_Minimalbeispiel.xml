@@ -1,0 +1,30 @@
+<Procedure xmlns="http://hl7.org/fhir">
+	<id value="dca59d88-3179-11ec-8d3d-0242ac130003" />
+	<meta>
+		<profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_TELE_Procedure|1.0.0" />
+	</meta>
+	<text>
+		<status value="extensions" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Test</div>
+	</text>
+	<status value="not-done" >
+		<extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+			<extension url="content">
+				<valueString value="Nicht durchgeführt" />
+			</extension>
+		</extension>
+	</status>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20220131" />
+			<code value="10847001" />
+			<display value="Bronchoscopy (procedure)" />
+		</coding>
+		<text value="Einsatz einer Augenklappe" />
+	</code>
+	<subject>
+		<reference value="urn:uuid:e8610a8a-85dc-4a49-88be-ee8d3ab69f73" />
+	</subject>
+	<performedDateTime value="2020-01-12" />
+</Procedure>
