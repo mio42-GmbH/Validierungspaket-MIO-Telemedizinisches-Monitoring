@@ -550,7 +550,7 @@
                     <code>
                         <coding>
                             <system value="urn:oid:2.16.840.1.113883.6.24"/>
-                            <code value="131329"/>
+                            <code value="131330"/>
                             <display value="MDC_ECG_ELEC_POTL_II"/>
                         </coding>
                     </code>
@@ -570,7 +570,7 @@
                     <code>
                         <coding>
                             <system value="urn:oid:2.16.840.1.113883.6.24"/>
-                            <code value="131329"/>
+                            <code value="131389"/>
                             <display value="MDC_ECG_ELEC_POTL_III"/>
                         </coding>
                     </code>
